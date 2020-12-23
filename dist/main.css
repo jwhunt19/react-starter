@@ -13,18 +13,89 @@
   justify-content: center;
 }
 
+/* MOVIE WRAPPER */
+
 .movie-list-wrapper {
   width: 600px;
 }
 
-.search-bar {
+/* ADD BAR */
+
+.movie-add-bar {
   margin-bottom: 25px;
+}
+
+#movie-add {
+  border: 1px solid rgba(144, 115, 167, 0.5);
+  border-radius: 3px;
+  padding: 6px 10px;
+  width: 220px;
+}
+
+.movie-add-bar button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 6px;
+  background-color: thistle;
+  color: white;
+}
+
+.movie-add-bar button:hover {
+  cursor: pointer;
+  background-color: rgb(216, 155, 216);
+}
+
+.movie-add-bar button:active {
+  background-color: rgb(211, 99, 211);
+}
+
+/* TABS-SEARCH PARENT */
+
+.tabs-search {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* TABS */
+
+.tabs-wrapper {
+  display: flex;
+}
+
+.tab {
+  padding: 15px;
+  border: 1px solid rgba(144, 115, 167, 0.5);
+  border-bottom: none;
+}
+
+.selected {
+  background-color: thistle;
+}
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.watched {
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.to-watch {
+  border-radius: 0px 5px 5px 0px;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  margin-bottom: 5px;
 }
 
 #movie-search {
   border: 1px solid rgba(144, 115, 167, 0.5);
   border-radius: 3px 0px 0px 3px;
-  padding: 5px 10px;
+  padding: 7px 10px;
   width: 200px;
 }
 
@@ -32,16 +103,19 @@
   border: 1px solid rgba(144, 115, 167, 0.5);
   border-left: none;
   border-radius: 0px 3px 3px 0px;
-  padding: 5px 10px;
+  padding: 7px 10px;
 }
 
 .search-bar button:hover {
   cursor: pointer;
+  background-color: rgb(231, 231, 231);
 }
 
 .search-bar button:active {
   background-color: rgb(218, 218, 218);
 }
+
+/* MOVIE LIST */
 
 .movie-list {
   border: 1px solid rgba(144, 115, 167, 0.5);
@@ -49,8 +123,26 @@
 
 .movie-list-entry {
   padding: 20px 0px 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .movie-list-entry:nth-child(n + 2) {
   border-top: 1px solid rgba(144, 115, 167, 0.5);
+}
+
+.movie-list-entry button {
+  margin-right: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 6px;
+  background-color: thistle;
+  color: white;
+}
+
+.movie-list-entry button:hover {
+  cursor: pointer;
+  background-color: rgb(216, 155, 216);
 }
